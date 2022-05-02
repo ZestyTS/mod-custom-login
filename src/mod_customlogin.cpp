@@ -260,7 +260,7 @@ public:
                     if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_DEATH_KNIGHT:
@@ -271,7 +271,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_PALADIN:
@@ -281,7 +281,7 @@ public:
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_WARRIOR:
@@ -292,7 +292,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_HUNTER:
@@ -303,7 +303,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_ROGUE:
@@ -313,7 +313,7 @@ public:
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_DRUID:
@@ -326,7 +326,7 @@ public:
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
                     if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 case CLASS_SHAMAN:
@@ -338,7 +338,7 @@ public:
                     if (LoginBOAChest2) { player->AddItem(chest2, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
                     if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
 
                 default:
@@ -347,7 +347,7 @@ public:
                     if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
                     if (LoginBOAChest) { player->AddItem(chest, 1); }
                     if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 1); }
+                    if (LoginBOABags) { player->AddItem(bag, 4); }
                     break;
                 }
 
