@@ -1,9 +1,5 @@
 This fork updates spell tables so that players are given the Teleport: Dalaran spell with all other teleport spells.
-This can be disabled by commenting the lines
 
-'player->learnSpell(53140);	// Dalaran'
-
-in mod_customlogin.cpp.
 
 # ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
 - Latest build status with azerothcore: [![Build Status](https://travis-ci.org/azerothcore/mod-custom-login.svg?branch=master)](https://travis-ci.org/azerothcore/mod-custom-login)
