@@ -496,6 +496,7 @@ public:
                     player->learnSpell(3562);	// Ironforge
                     player->learnSpell(33690);	// Shattrath
                     player->learnSpell(3561);	// Stormwind
+                    player->learnSpell(53140);	// Dalaran
                     break;
 
                 case TEAM_HORDE:
@@ -506,6 +507,7 @@ public:
                     player->learnSpell(32272);	// Silvermoon
                     player->learnSpell(3566);	// Thunder Bluff
                     player->learnSpell(3563);	// Undercity
+                    player->learnSpell(53140);	// Dalaran
                     break;
 
                 default:
@@ -531,6 +533,7 @@ public:
                     player->SetReputation(69, 999999);	// Darnassus
                     player->SetReputation(389, 999999);	// Gnomeregan
                     player->SetReputation(930, 999999);	// Exodar
+                    
                     break;
 
                     // Horde Capital Cities
