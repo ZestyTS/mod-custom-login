@@ -70,6 +70,10 @@ bool LoginBOAShoulders = 1;
 bool LoginBOAShoulders2 = 1;
 bool LoginBOAChest = 1;
 bool LoginBOAChest2 = 1;
+bool LoginBOACloak = 1;
+bool LoginBOANeck = 1;
+bool LoginBOAHelm = 1;
+bool LoginBOAPants = 1;
 bool LoginBOATrinket = 1;
 bool LoginBOATrinket2 = 1;
 bool LoginBOAWeapon = 1;
@@ -110,6 +114,10 @@ public:
         LoginBOAWeapon = sConfigMgr->GetOption<bool>("Login.BoA.Weapon",1);
         LoginBOAWeapon2 = sConfigMgr->GetOption<bool>("Login.BoA.Weapon2",1);
         LoginBOAWeapon3 = sConfigMgr->GetOption<bool>("Login.BoA.Weapon3",1);
+        LoginBOACloak = sConfigMgr->GetOption<bool>("Login.BoA.Cloak",1);
+        LoginBOANeck = sConfigMgr->GetOption<bool>("Login.BoA.Neck",1);
+        LoginBOAHelm = sConfigMgr->GetOption<bool>("Login.BoA.Helm",1);
+        LoginBOAPants = sConfigMgr->GetOption<bool>("Login.BoA.Pants",1);
         LoginSkills = sConfigMgr->GetOption<bool>("Login.Skills", 1);
         LoginSpecialAbility = sConfigMgr->GetOption<bool>("Login.SpecialAbility", 1);
         LoginReputation = sConfigMgr->GetOption<bool>("Login.Reputation", 1);
@@ -429,6 +437,7 @@ public:
                         player->learnSpell(202);	// 2H Sword
                         player->learnSpell(227);	// Staves
                         player->learnSpell(2567);	// Thrown
+                        player->learnSpell(1180);    // Daggers
                     */
 
                 case CLASS_PALADIN:
@@ -471,6 +480,7 @@ public:
                     break;
 
                 case CLASS_ROGUE:
+                    player->learnSpell(1180);    // Daggers
                     player->learnSpell(264);	// Bows
                     player->learnSpell(5011);	// Crossbow
                     player->learnSpell(15590);	// Fists
