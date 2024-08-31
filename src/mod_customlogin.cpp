@@ -274,102 +274,127 @@ public:
                 // TODO: Improve the code. No time, no care, no worries!
                 switch (player->getClass())
                 {
+                    case CLASS_PRIEST:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_PRIEST:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_DEATH_KNIGHT:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
+                        if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_DEATH_KNIGHT:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_PALADIN:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_PALADIN:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_WARRIOR:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
+                        if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_WARRIOR:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_HUNTER:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
+                        if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_HUNTER:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_ROGUE:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_ROGUE:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_DRUID:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOATrinket2) { player->AddItem(trinket2, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); player->AddItem(shoulders2, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); player->AddItem(chest2, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); player->AddItem(weapon2, 1); player->AddItem(weapon3, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_DRUID:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOATrinket) { player->AddItem(trinket2, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAShoulders2) { player->AddItem(shoulders2, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOAWeapon3) { player->AddItem(weapon3, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    case CLASS_SHAMAN:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); player->AddItem(shoulders2, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); player->AddItem(chest2, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); player->AddItem(weapon2, 1); }
+                        if (LoginBOAHelm) { player->AddItem(helm, 1); }
+                        if (LoginBOAPants) { player->AddItem(pants, 1); }
+                        if (LoginBOACloak) { player->AddItem(cloak, 1); }
+                        if (LoginBOANeck) { player->AddItem(neck, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
 
-                case CLASS_SHAMAN:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAShoulders2) { player->AddItem(shoulders2, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAChest2) { player->AddItem(chest2, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOAWeapon2) { player->AddItem(weapon2, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
-
-                default:
-                    if (LoginBOATrinket) { player->AddItem(trinket, 2); };
-                    if (LoginBOARing) { player->AddItem(ring, 1); }
-                    if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
-                    if (LoginBOAChest) { player->AddItem(chest, 1); }
-                    if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
-                    if (LoginBOABags) { player->AddItem(bag, 4); }
-                    break;
+                    default:
+                        if (LoginBOATrinket) { player->AddItem(trinket, 2); }
+                        if (LoginBOARing) { player->AddItem(ring, 1); player->AddItem(ring2, 1); }
+                        if (LoginBOAShoulders) { player->AddItem(shoulders, 1); }
+                        if (LoginBOAChest) { player->AddItem(chest, 1); }
+                        if (LoginBOAWeapon) { player->AddItem(weapon, 1); }
+                        if (LoginBOABags) { player->AddItem(bag, 4); }
+                        break;
                 }
 
                 // Inform the player they have new items
