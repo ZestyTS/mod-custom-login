@@ -152,6 +152,7 @@ public:
             {
                 // Define Equipment
                 uint32 shoulders = 0, chest = 0, trinket = 0, weapon = 0, weapon2 = 0, weapon3 = 0, shoulders2 = 0, chest2 = 0, trinket2 = 0;
+                uint32 helm = 0, pants = 0, cloak = 100001, neck = 100002, ring2 = 100000;
                 const uint32 bag = 23162;		// Foror's Crate of Endless Resist Gear Storage (36 Slot)
                 const uint32 ring = 50255;		// Dread Pirate Ring (5% XP Boost)
 
@@ -160,93 +161,113 @@ public:
                 switch (player->getClass())
                 {
 
-                case CLASS_WARRIOR:
-                    shoulders = 42949;
-                    chest = 48685;
-                    trinket = 42991;
-                    weapon = 42943;
-                    weapon2 = 44092;
-                    weapon3 = 44093;
-                    break;
+                    case CLASS_WARRIOR:
+                        shoulders = 42949;
+                        chest = 48685;
+                        helm = 100005;         // Helm of Valor
+                        pants = 100006;        // Legplates of Valor
+                        trinket = 42991;
+                        weapon = 42943;
+                        weapon2 = 44092;
+                        weapon3 = 44093;
+                        break;
 
-                case CLASS_PALADIN:
-                    shoulders = 42949;
-                    chest = 48685;
-                    trinket = 42991;
-                    weapon = 42945;
-                    weapon2 = 44092;
-                    break;
+                    case CLASS_PALADIN:
+                        shoulders = 42949;
+                        chest = 48685;
+                        helm = 100005;         // Helm of Valor
+                        pants = 100006;        // Legplates of Valor
+                        trinket = 42991;
+                        weapon = 42945;
+                        weapon2 = 44092;
+                        break;
 
-                case CLASS_HUNTER:
-                    shoulders = 42950;
-                    chest = 48677;
-                    trinket = 42991;
-                    weapon = 42943;
-                    weapon2 = 42946;
-                    weapon3 = 44093;
-                    break;
+                    case CLASS_HUNTER:
+                        shoulders = 42950;
+                        chest = 48677;
+                        helm = 100007;         // Coif of Elements
+                        pants = 100008;        // Kilt of Elements
+                        trinket = 42991;
+                        weapon = 42943;
+                        weapon2 = 42946;
+                        weapon3 = 44093;
+                        break;
 
-                case CLASS_ROGUE:
-                    shoulders = 42952;
-                    chest = 48689;
-                    trinket = 42991;
-                    weapon = 42944;
-                    weapon2 = 42944;
-                    break;
+                    case CLASS_ROGUE:
+                        shoulders = 42952;
+                        chest = 48689;
+                        helm = 100003;         // Stained Shadowcraft Mask
+                        pants = 100004;        // Stained Shadowcraft Pants
+                        trinket = 42991;
+                        weapon = 42944;
+                        weapon2 = 42944;
+                        break;
 
-                case CLASS_PRIEST:
-                    shoulders = 42985;
-                    chest = 48691;
-                    trinket = 42992;
-                    weapon = 42947;
-                    break;
+                    case CLASS_PRIEST:
+                        shoulders = 42985;
+                        chest = 48691;
+                        helm = 100009;         // Dreadmist Mask
+                        pants = 100010;        // Dreadmist Leggings
+                        trinket = 42992;
+                        weapon = 42947;
+                        break;
 
-                case CLASS_DEATH_KNIGHT:
-                    shoulders = 42949;
-                    chest = 48685;
-                    trinket = 42991;
-                    weapon = 42945;
-                    weapon2 = 44092;
-                    weapon3 = 42943;
-                    break;
+                    case CLASS_DEATH_KNIGHT:
+                        shoulders = 42949;
+                        chest = 48685;
+                        helm = 100005;         // Helm of Valor
+                        pants = 100006;        // Legplates of Valor
+                        trinket = 42991;
+                        weapon = 42945;
+                        weapon2 = 44092;
+                        weapon3 = 42943;
+                        break;
 
-                case CLASS_SHAMAN:
-                    shoulders = 42951;
-                    chest = 48683;
-                    trinket = 42992;
-                    weapon = 42948;
-                    shoulders2 = 42951;
-                    chest2 = 48683;
-                    weapon2 = 42947;
-                    break;
+                    case CLASS_SHAMAN:
+                        shoulders = 42951;
+                        chest = 48683;
+                        helm = 100007;         // Coif of Elements
+                        pants = 100008;        // Kilt of Elements
+                        trinket = 42992;
+                        weapon = 42948;
+                        shoulders2 = 42951;
+                        chest2 = 48683;
+                        weapon2 = 42947;
+                        break;
 
-                case CLASS_MAGE:
-                    shoulders = 42985;
-                    chest = 48691;
-                    trinket = 42992;
-                    weapon = 42947;
-                    break;
+                    case CLASS_MAGE:
+                        shoulders = 42985;
+                        chest = 48691;
+                        helm = 100009;         // Dreadmist Mask
+                        pants = 100010;        // Dreadmist Leggings
+                        trinket = 42992;
+                        weapon = 42947;
+                        break;
 
-                case CLASS_WARLOCK:
-                    shoulders = 42985;
-                    chest = 48691;
-                    trinket = 42992;
-                    weapon = 42947;
-                    break;
+                    case CLASS_WARLOCK:
+                        shoulders = 42985;
+                        chest = 48691;
+                        helm = 100009;         // Dreadmist Mask
+                        pants = 100010;        // Dreadmist Leggings
+                        trinket = 42992;
+                        weapon = 42947;
+                        break;
 
-                case CLASS_DRUID:
-                    shoulders = 42984;
-                    shoulders2 = 42952;
-                    chest = 48687;
-                    chest2 = 48689;
-                    trinket = 42992;
-                    trinket2 = 42991;
-                    weapon = 42948;
-                    weapon2 = 48718;
-                    break;
+                    case CLASS_DRUID:
+                        shoulders = 42984;
+                        shoulders2 = 42952;
+                        chest = 48687;
+                        chest2 = 48689;
+                        helm = 100011;         // Wildheart Cowl
+                        pants = 100012;        // Wildheart Kilt
+                        trinket = 42992;
+                        trinket2 = 42991;
+                        weapon = 42948;
+                        weapon2 = 48718;
+                        break;
 
-                default:
-                    break;
+                    default:
+                        break;
                 }
 
                 // Hand out the heirlooms. I prefer only the ring and trinkets for new characters.
